@@ -130,7 +130,7 @@
     const loanApplications = JSON.parse(localStorage.getItem("loanApplications")) || [];
 
     const tableBody = document.querySelector('.dashboard-table tbody');
-    tableBody.innerHTML = ''; // Clear existing table rows
+    tableBody.innerHTML = ''; 
 
     loanApplications.forEach((loan) => {
       const row = `

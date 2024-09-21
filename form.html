@@ -170,12 +170,38 @@
   <script>
     document.getElementById("loan-form").addEventListener("submit", function (event) {
       event.preventDefault();
+  
+      // Gather form data
+      const formData = {
+        name: document.getElementById("name").value,
+        bankName: document.getElementById("bank-name").value,
+        income: document.getElementById("income").value,
+        loanAmount: document.getElementById("loan-amount").value,
+        loanTenure: document.getElementById("loan-tenure").value,
+        employmentStatus: document.getElementById("employment-status").value,
+        employmentDetails: document.getElementById("employment-details").value,
+        employmentAddress: document.getElementById("employment-address").value,
+      };
+  
+   
+      let loanApplications = JSON.parse(localStorage.getItem("loanApplications")) || [];
+  
+   
+      loanApplications.push(formData);
+  
+    
+      localStorage.setItem("loanApplications", JSON.stringify(loanApplications));
+  
       alert("Loan application submitted successfully!");
+  
+      
+      window.location.href = "dashboard.html";  
     });
   </script>
+  
 
   <div class="chart-container">
-    <canvas id="myChart" width="300" height="300"></canvas> <!-- Adjusted size here -->
+    <canvas id="myChart" width="300" height="300"></canvas> 
     <script>
       const ctx = document.getElementById('myChart').getContext('2d');
       const myChart = new Chart(ctx, {
@@ -234,3 +260,4 @@
 </body>
 
 </html>
+

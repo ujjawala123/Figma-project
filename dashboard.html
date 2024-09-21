@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+  <!-- Link to the CSS file -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <ul>
+      <li><a href="#"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+      <li><a href="#"><i class="fas fa-users"></i> Borrowers</a></li>
+      <li><a href="#"><i class="fas fa-money-bill-wave"></i> Loans</a></li>
+      <li><a href="#"><i class="fas fa-receipt"></i> Repayments</a></li>
+      <li><a href="#"><i class="fas fa-cog"></i> Loan Parameters</a></li>
+      <li><a href="#"><i class="fas fa-calculator"></i> Accounting</a></li>
+      <li><a href="#"><i class="fas fa-chart-line"></i> Reports</a></li>
+      <li><a href="#"><i class="fas fa-lock"></i> Collateral</a></li>
+      <li><a href="#"><i class="fas fa-user-shield"></i> Access Configuration</a></li>
+      <li><a href="#"><i class="fas fa-piggy-bank"></i> Savings</a></li>
+      <li><a href="#"><i class="fas fa-money-check"></i> Expenses</a></li>
+      <li><a href="#"><i class="fas fa-signature"></i> E-signature</a></li>
+      <li><a href="#"><i class="fas fa-user-tie"></i> Investor Accounts</a></li>
+      <li><a href="#"><i class="fas fa-calendar-alt"></i> Calendar</a></li>
+      <li><a href="#"><i class="fas fa-cog"></i> Settings</a></li>
+    </ul>
+  </div>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>Dashboard</h1>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h2>Loan Application Form</h2>
+    <div class="form-container">
+      <form action="#">
+        <label for="amount">Loan Amount</label>
+        <input type="number" id="amount" name="amount">
+
+        <label for="employment">Employment Details</label>
+        <input type="text" id="employment" name="employment">
+
+        <label for="address">Employment Address</label>
+        <input type="text" id="address" name="address">
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <!-- Table and Chart Placeholder -->
+    <div class="dashboard">
+      <h2>Loan Data</h2>
+      <table class="dashboard-table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John Doe</td>
+            <td>$5,000</td>
+            <td>Approved</td>
+          </tr>
+          <tr>
+            <td>Jane Smith</td>
+            <td>$10,000</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</body>
+</html>
